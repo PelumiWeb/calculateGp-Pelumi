@@ -1,0 +1,22 @@
+{
+  "name": "calculategp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Index.js",
+  "scripts": {
+    "start": "node app.js/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PelumiWeb/PelumiGpCalculator.git"
+  },
+  "author": "Oluwapelumi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PelumiWeb/PelumiGpCalculator/issues"
+  },
+  "homepage": "https://github.com/PelumiWeb/PelumiGpCalculator#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
