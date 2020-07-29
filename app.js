@@ -5,15 +5,13 @@ const app = express()
 const port  = process.env.PORT || 5000
 const source = (path.join(__dirname, './src/'))
 console.log(source)
-const getSource = app.use(express.static(source))
-
-
+ app.use(express.static(source))
 
 
 app.listen(port, () => {
     console.log('Server is up on port ' + port)
 })
-console.log('What is going on?')
+
 
 
 // if (process.env.NODE_ENV === 'production') {
