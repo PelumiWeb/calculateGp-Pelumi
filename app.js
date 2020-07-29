@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 
 const port  = process.env.PORT || 5000
-const source = (path.join(__dirname, './src/'))
+const source = path.join(__dirname, './src/')
 console.log(source)
  app.use(express.static(source))
 
