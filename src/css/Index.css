@@ -22,7 +22,7 @@ html {
 
 body {
     font-size:2rem ;
-    background-color: var(--Primary_color);
+    /* background-color: var(--Primary_color); */
 }
 .head_section {
     width: 100%;
