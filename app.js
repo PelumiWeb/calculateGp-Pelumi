@@ -3,9 +3,12 @@ const express = require("express");
 const app = express();
 
 const port = process.env.PORT || 5000;
-const source = path.join(__dirname, "./src/");
+const source = path.join(__dirname, "public");
+console.log(source);
 app.use(express.static(source));
-
+app.get("/", (req, res) => {
+  res.send("public", "Index.html");
+});
 app.listen(port, () => {
   console.log("Server is up on port " + port);
 });
