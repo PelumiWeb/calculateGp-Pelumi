@@ -4,8 +4,7 @@
   "description": "",
   "main": "Index.js",
   "scripts": {
-    "start": "node app.js/",
-    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
+    "start": "node app.js/"
   },
   "repository": {
     "type": "git",

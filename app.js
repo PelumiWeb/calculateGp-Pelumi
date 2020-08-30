@@ -10,12 +10,12 @@ app.get("*", (req, res) => {
   res.send("public", "Index.html");
 });
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-}
-app.get("*", (request, response) => {
-  response.sendFile(path.join(__dirname, "client/build", "index.html"));
-});
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static("client/build"));
+// }
+// app.get("*", (request, response) => {
+//   response.sendFile(path.join(__dirname, "client/build", "index.html"));
+// });
 app.listen(port, () => {
   console.log("Server is up on port " + port);
 });
